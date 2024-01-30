@@ -1,0 +1,10 @@
+1. Creating new Branch
+    git checkout -b JSCodes
+2. Checking which branch we are currently in
+    git branch -a
+3. Add file you need
+    git add FILENAME
+4. Commit the file
+    git commit -m FILE_COMMENTS
+5. Now push into repository but BRANCH name
+    git push -u origin NEW_BRANCH_NAME_CREATED
