@@ -1,0 +1,23 @@
+/* To link this CSS to html, use LINK element in html body section */
+
+/* Selecting element in CSS using TAG NAME - No prefixes used */
+form{
+    padding: 25px;
+    background-color: pink;
+}
+
+/* using ID of element - prefix #   */
+#name{
+    height: 25px;
+}
+
+/*using class name of element - prefix . (DOT) */
+.btn{
+    margin-top: 25px;
+    padding: 10px;
+}
+
+/* using Attributes of element - element[ATT] */
+label[for='name']{
+    font-style: italic;
+}
