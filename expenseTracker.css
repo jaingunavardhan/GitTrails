@@ -1,11 +1,17 @@
+
 form{
+    margin: auto;
     background-color: yellow;
     padding: 10px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
 }
 
 label{
     padding: 10px;
     margin-bottom: 10px;
+    color: blue;
 }
 
 input{
@@ -18,8 +24,33 @@ select{
 
 button{
     margin: 10px;
+    background-color: skyblue;
+    padding: 5px;
+    color: blue;
+    border-radius: 5px;
+    border-color: blue;
 }
 
-#expensesList{
-    background-color: orange;
+ul{
+    background-color: palegoldenrod;
+    margin: 0px;
+    width: 30%;
+    border-radius: 10px;
+    margin: auto;
+    align-items: center;
+}
+
+li{
+    color: red;
+    align-self: center;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 0px;
+    color: blueviolet;
+}
+
+h2{
+    margin-bottom: 0px;
 }
