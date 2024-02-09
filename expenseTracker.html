@@ -11,7 +11,8 @@
   </head>
 
   <body>
-    <form onsubmit="submitClicked(event)">
+    <h1>Enter Expenses:</h1>
+    <form id="form1" onsubmit="submitClicked(event)">
         <label for="amount">Choose Expense Amount : </label>
             <input type="number" name="amount" id="amount"> <br>
         <label for="desc">Enter Description : </label>
@@ -28,6 +29,7 @@
             </select> <br>
         <button type="submit">Add Expenses</button>
     </form>
+    <h1 style="color:red">Expenses:</h1>
     <ul id="expenseslist">
         
     </ul>
