@@ -16,6 +16,10 @@ function showAllStudents()
                 showStudent(studentsInAPI[i]);  //Displaying each object(entry) by calling func
             }
         })
+        .catch(error)
+        {
+            console.log(error);
+        }
 }
 
 function showStudent(studentDetails)
