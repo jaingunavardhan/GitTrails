@@ -41,7 +41,7 @@ const server = http.createServer( (request, response)=>{
                     console.log("File write error")
                 else
                 {  
-                    response.statusCode=302; //setting status code of response
+                    response.statusCode=302; //setting status code of response to redirected
                     response.write(message); // writing the parsed input onto the screen            
                     showForm(response);                
                 }
