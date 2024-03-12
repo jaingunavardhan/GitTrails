@@ -1,0 +1,16 @@
+{
+  "name": "gittrails",
+  "version": "1.0.0",
+  "description": "Node JS using Nodemon Git npm",
+  "main": "addDeleteElements.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon serverFormFileMsgs.js",
+    "start-server": "node serverFormFileMsgs.js"
+  },
+  "author": "Gunavardhan Jain",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
