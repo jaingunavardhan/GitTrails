@@ -1,30 +1,18 @@
 const express = require('express');
-const bodyParser = require('body-parser')
+//Requiring user-defined files which are located in Routes folder followed by name
+const adminRouter = require('./routes/admin.js')
+const shopRouter = require('./routes/shop.js')
 
 //Like creating an express server
 const app = express();
 
-//parses the entered body like HTML body content
-app.use( bodyParser.urlencoded( {extended:false} ) );
+//using '/admin' as filter to make sure only routes with url /admin/ANY will get routed here
+app.use('/admin', adminRouter);
+app.use(shopRouter);
 
-//executed only when the request.url is '/add-product'
-app.use( '/add-product', (request, response, next)=>{
-    console.log("Int the Add Product Page");
-    //Taking a form inout and on submit page with url '/product' will be opened
-    response.send("<form action='/product' method='POST'><input type='text' name='title'><input type='text' name='size'><button type=submit>Add Product</button></form>");
-})
-
-//executed only when the url is '/product' and also only when CRUD methos is POST.
-app.post( '/product', (request, response, next)=>{
-    console.log("In the Products Page");
-    //Showing the body contained in form after submit
-    console.log(request.body);
-    //Like setting statusCode to 302 and redirecting with header all taken care by express
-    response.redirect('/');
-})
-
-app.use('/', (request, response, next)=>{
-    response.send("<h1>Welcome to Gunavardhan's Site</h1>");
+//For any other random route entered which is not in our list, we show 404 Not found
+app.use( (request, response, next)=>{
+    response.status(404).send('<h1>Page Not Found</h1>');
 })
 
 //Listens for any requests at port 4000
