@@ -14,6 +14,7 @@ app.use( '/add-product', (request, response, next)=>{
     response.send("<form action='/product' method='POST'><input type='text' name='title'><input type='text' name='size'><button type=submit>Add Product</button></form>");
 })
 
+//executed only when the url is '/product' and also only when CRUD methos is POST.
 app.post( '/product', (request, response, next)=>{
     console.log("In the Products Page");
     //Showing the body contained in form after submit
