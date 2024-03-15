@@ -1,5 +1,6 @@
 const express = require('express');
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
+const path = require('path');
 
 //Creating a router using express.Router and use this router same as you use app.use
 const router = express.Router();
@@ -11,7 +12,7 @@ router.use( bodyParser.urlencoded( {extended:false} ) );
 router.get( '/add-product', (request, response, next)=>{
     console.log("In the Add Product Page");
     //Taking a form inout and on submit page with url '/product' will be opened
-    response.send("<form action='/admin/add-product' method='POST'><input type='text' name='title'><input type='text' name='size'><button type=submit>Add Product</button></form>");
+    response.sendFile( path.join(__dirname, '..', 'views', 'admin.html'))    
 })
 
 //executed only when the url is '/add-product' and also only when CRUD methos is POST.
