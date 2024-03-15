@@ -1,0 +1,47 @@
+.main-header{
+    background-color: yellow;
+    width: 100%;
+    margin: 0;
+    padding: 1px;
+    margin-bottom: 10px;
+}
+.main-header_list{
+    list-style: none;
+    display: flex;
+    vertical-align: center;
+}
+.main-header_item a{
+    color:maroon;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    font-size: large;
+}
+.main-header_item a:hover,
+.main-header_item a:active{
+    color:blue
+}
+div{
+    width: 100%;
+    text-align: center;    
+}
+label{
+    color: blue;
+}
+input{
+    border-radius: 3px;
+    margin: 5px;
+    border-color: blue;
+}
+button{
+    border-radius: 5px;
+    border-color: blue;
+    color: blue;
+    padding: 3px;
+    margin: 3px;
+}
+button:hover,
+button:active{
+    background-color: blue;
+    color: white;
+}
