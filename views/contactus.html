@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactus Page</title>
+    <link rel="stylesheet" href="/contactus.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-header_nav">
+            <ul class="main-header_list">
+                <li class="main-header_item"><a href="/">Shop</a></li>
+                <li class="main-header_item"><a href="/admin/add-product">Add Product</a></li>
+                <li class="main-header_item"><a href="/contactus">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <div>
+        <form action='/success' method="POST">
+            <label for="nameid">Name</label>
+                <input type="text" name="name" id="nameid" placeholder="Enter Name"/><br>
+            <label for="emailid">EmailID</label>
+                <input type="email" name="email" id="emailid" placeholder="Enter EmailID"/><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
